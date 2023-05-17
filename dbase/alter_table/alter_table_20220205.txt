@@ -1,0 +1,32 @@
+CREATE TABLE `data_pemesanan` (
+  `pemesanan_id` int(11) NOT NULL AUTO_INCREMENT,
+  `pemesanan_no_sp` varchar(255) NOT NULL,
+  `pemesanan_jenis_sp` varchar(255) NOT NULL,
+  `pemesanan_tanggal` date NOT NULL,
+  `pemesanan_supplier_id` int(11) NOT NULL,
+  `is_delete` tinyint(1) NOT NULL DEFAULT '0',
+  `is_permanent` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`pemesanan_id`),
+  KEY `pemesanan_supplier` (`pemesanan_supplier_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `data_detail_pemesanan` (
+  `detail_pemesanan_id` int(11) NOT NULL AUTO_INCREMENT,
+  `detail_pemesanan_pemesanan_id` int(11) NOT NULL,
+  `detail_pemesanan_barcode` varchar(255) NOT NULL,
+  `detail_pemesanan_nama_barang` varchar(255) NOT NULL,
+  `detail_pemesanan_kemasan` varchar(255) NOT NULL,
+  `detail_pemesanan_qty` int(11) NOT NULL,
+  `is_obat` tinyint(4) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`detail_pemesanan_id`),
+  KEY `detail_pemesanan_pemesanan_id` (`detail_pemesanan_pemesanan_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `data_inkaso` ( 
+  `inkaso_id` INT(11) NOT NULL AUTO_INCREMENT , 
+  `tanggal` DATE NOT NULL , 
+  `cara_bayar` ENUM('tunai','bca') NOT NULL , 
+  `jumlah` DECIMAL(20,2) NOT NULL , 
+  `id_penerimaan` INT NOT NULL , 
+  PRIMARY KEY (`inkaso_id`)
+) ENGINE = MyISAM;

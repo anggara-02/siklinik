@@ -1,0 +1,4 @@
+ALTER TABLE `data_so_detail` ADD `is_delete` TINYINT(1) NOT NULL DEFAULT '0' AFTER `qty`;
+ALTER TABLE `data_so_detail` ADD `is_obat` TINYINT(1) NOT NULL DEFAULT '0' AFTER `is_delete`;
+ALTER TABLE `data_so` ADD `create_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP AFTER `penyimpanan`;
+ALTER TABLE `data_stok` CHANGE `id_kemasan` `id_kemasan` VARCHAR(100) NULL DEFAULT NULL;

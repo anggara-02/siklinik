@@ -1,0 +1,9 @@
+ALTER TABLE data_stok CHANGE penyimpanan penyimpanan ENUM('etalase','gudang', 'promo') CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+
+ALTER TABLE data_obat ADD obat_old_price DECIMAL(15,2) NOT NULL AFTER obat_dosis_id;
+
+ALTER TABLE data_alkes ADD alkes_old_price DECIMAL(15,2) NOT NULL AFTER alkes_barcode;
+
+ALTER TABLE data_distribusi ADD sumber ENUM('gudang', 'etalase', 'promo') CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL AFTER tanggal;
+
+====done===

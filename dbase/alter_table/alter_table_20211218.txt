@@ -1,0 +1,5 @@
+ALTER TABLE `data_layanan` CHANGE `layanan_is_delete` `is_delete` TINYINT(1) NOT NULL DEFAULT '0' COMMENT '1=delete semu';
+ALTER TABLE `data_layanan` ADD `is_permanent` TINYINT(1) NOT NULL DEFAULT '0' AFTER `is_delete`; 
+ALTER TABLE `data_layanan` CHANGE `layanan_poli_name` `layanan_poli_name` VARCHAR(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL; 
+ALTER TABLE `data_obat` CHANGE `obat_is_delete` `is_delete` TINYINT(1) NOT NULL DEFAULT '0' COMMENT '1=delete semu'; 
+ALTER TABLE `data_obat` ADD `is_permanent` TINYINT(1) NOT NULL DEFAULT '0' AFTER `is_delete`; 

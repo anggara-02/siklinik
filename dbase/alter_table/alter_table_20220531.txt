@@ -1,0 +1,5 @@
+CREATE TABLE `setting` ( `setting_id` INT NOT NULL , `nama_klinik` VARCHAR(255) NOT NULL , `no_telpon` VARCHAR(255) NOT NULL , `email` VARCHAR(255) NOT NULL , `alamat` TEXT NOT NULL , `logo` VARCHAR(255) NOT NULL , `apoteker` VARCHAR(255) NOT NULL , `sipa` VARCHAR(255) NOT NULL , `sia` VARCHAR(255) NOT NULL , `min_promo` DECIMAL(20.2) NOT NULL , `konversi_poin` VARCHAR(255) NOT NULL ) ENGINE = InnoDB;
+ALTER TABLE `setting` ADD PRIMARY KEY(`setting_id`);
+ALTER TABLE `setting` CHANGE `setting_id` `setting_id` INT(11) NOT NULL AUTO_INCREMENT;
+
+====done===

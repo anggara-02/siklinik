@@ -1,0 +1,2 @@
+ALTER TABLE `data_penjamin` CHANGE `penjamin_is_delete` `is_delete` TINYINT(1) NOT NULL DEFAULT '0' COMMENT '1=delete semu';
+ALTER TABLE `data_penjamin` ADD `is_permanent` TINYINT(1) NOT NULL DEFAULT '0' AFTER `is_delete`;

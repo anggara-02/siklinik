@@ -1,0 +1,103 @@
+*, body{
+	line-height: 1;
+	font-family: Arial;
+	padding:1pt; 
+} 
+.container { 
+	padding:1pt; 
+	margin:0 auto; 
+	height: auto;
+}
+.brandstruk{
+	text-align: center;
+	width: 100%;
+	font-size: 8pt;
+	font-weight: 550;
+}
+body .brandstruk .td-bold{
+	text-transform: uppercase; 
+	font-weight: bold; 
+	
+}
+.footer{
+	font-size: 6pt;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: .5;
+}
+.hr-solid{
+	border-top:1px solid #000;
+	margin: 4px auto;
+}
+span.value{
+	display: inline-block;
+	float: right;
+}
+hr.hr-dashed{
+	border-top:1px dashed #000;
+	margin: 4px auto;
+}
+.mb-0{
+	margin-bottom: 0 !important;
+}
+.brandstruk td{
+	height:0pt;
+	text-align:center;
+}
+.detail{
+	font-size: 8pt; 
+	font-weight: normal; 
+}
+@page {
+    size: auto;   /* auto is the initial value */
+    margin: 0;  /* this affects the margin in the printer settings */
+}
+.mt-1{
+	margin-top: 10px;
+}
+.mb-1{
+	margin-bottom: 10px;
+}
+.mb-mini{
+	margin-bottom: 2px !important;
+}
+.dashed-footer{
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.pt-1{
+	padding-top: 5px;
+}
+.pb-1{
+	padding-bottom: 5px;
+}
+
+table td
+{
+    height:6px;
+}
+
+@media screen and (max-width: 80mm){
+	.container { 
+		width: 80mm;
+	}
+	.detail{
+		font-size: 7pt; 
+	}
+	body .brandstruk{
+		font-size: 12px !important; 
+	}
+}
+
+@media screen and (max-width: 48.5mm){
+	.container { 
+		width: 48.5mm;
+		font-size: 8pt; 
+	}
+	.detail{
+		font-size: 7pt; 
+	}
+	body .brandstruk{
+		font-size: 12px; 
+	}
+}

@@ -1,0 +1,4 @@
+ALTER TABLE `data_stok_log` CHANGE `expired_date` `expired_date` VARCHAR(11) NULL DEFAULT NULL;
+CREATE TABLE `data_distribusi` ( `id` INT NOT NULL AUTO_INCREMENT , `kode` VARCHAR(100) NOT NULL , `tanggal` DATE NOT NULL , `tujuan` ENUM('etalase','gudang') NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;
+CREATE TABLE `data_distribusi_detail` ( `id` INT NOT NULL AUTO_INCREMENT , `id_distribusi` INT NOT NULL , `id_stok` INT NOT NULL , `qty` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;
+ALTER TABLE `data_distribusi` ADD `is_delete` TINYINT(2) NULL DEFAULT '0' AFTER `tujuan`;

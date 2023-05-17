@@ -1,0 +1,3 @@
+ALTER TABLE `data_stok` ADD `harga_satuan` DECIMAL(20.2) NOT NULL AFTER `batch`;
+ALTER TABLE `data_so_detail` DROP `barcode`, DROP `id_kemasan`;
+ALTER TABLE `data_so_detail` ADD `qty_sebelum` INT NOT NULL AFTER `qty`;

@@ -1,0 +1,1 @@
+ALTER TABLE data_obat ADD obat_old_price DECIMAL(15,2) NULL DEFAULT NULL AFTER obat_dosis_id;

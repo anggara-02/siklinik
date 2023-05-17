@@ -1,0 +1,9 @@
+ALTER TABLE `data_poli` CHANGE `poli_is_delete` `is_delete` TINYINT(1) NOT NULL DEFAULT '0' COMMENT '1=delete semu';
+ALTER TABLE `data_poli` ADD `is_permanent` TINYINT(1) NOT NULL DEFAULT '0' AFTER `is_delete`;
+ALTER TABLE `data_supplier` CHANGE `supplier_is_delete` `is_delete` TINYINT(1) NOT NULL DEFAULT '0' COMMENT '1=delete semu'; 
+ALTER TABLE `data_supplier` ADD `is_permanent` TINYINT(1) NOT NULL DEFAULT '0' AFTER `is_delete`; 
+ALTER TABLE `data_supplier` ADD `supplier_sales_name` VARCHAR(200) NOT NULL AFTER `supplier_phone`, ADD `supplier_sales_phone` VARCHAR(200) NOT NULL AFTER `supplier_sales_name`; 
+ALTER TABLE `data_kemasan` CHANGE `kemasan_is_delete` `is_delete` TINYINT(1) NOT NULL DEFAULT '0' COMMENT '1=delete semu'; 
+ALTER TABLE `data_kemasan` ADD `is_permanent` TINYINT(1) NOT NULL DEFAULT '0' AFTER `is_delete`; 
+ALTER TABLE `data_dosis` CHANGE `dosis_is_delete` `is_delete` TINYINT(1) NOT NULL DEFAULT '0' COMMENT '1=delete semu'; 
+ALTER TABLE `data_dosis` ADD `is_permanent` TINYINT(1) NOT NULL DEFAULT '0' AFTER `is_delete`; 

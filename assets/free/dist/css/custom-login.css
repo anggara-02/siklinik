@@ -1,0 +1,113 @@
+/*konten*/
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+}
+.login-page, .register-page {
+    /*background: #e4eae7;*/
+    /*background: linear-gradient(to bottom, #ffffff, #e4eae7);*/
+    background: url(../img/login/login-bg.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.login-header{
+    margin-bottom: 15px;
+}
+.login-footer{
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+}
+.login-box-body, .register-box-body {
+    background: #fff;
+    padding: 50px;
+    border-radius: 4px;
+    width: 500px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.hr-dashed{
+    border-top:1px dashed #c1c1c1;
+}
+.m-b-1{
+    margin-bottom: 10px;
+}
+.m-b-2{
+    margin-bottom: 20px;
+}
+.m-t-1{
+    margin-top: 10px;
+}
+.m-b-0{
+    margin-bottom: 0;
+}
+.m-t-0{
+    margin-top: 0;
+}
+a {
+    color: #00a65a;
+}
+a:hover, a:focus {
+    color: #057b45;
+}
+.has-feedback .form-control {
+    padding-left: 35px;
+}
+.form-control-feedback {
+    right: auto;
+    left: 0;
+}
+.frame-scroll{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    background: transparent;
+}
+
+/*perubahan color*/
+/*.btn-success {
+    background-color: #5c981e;
+    border-color: #448106;
+}
+.btn-success.active.focus, .btn-success.active:focus, .btn-success.active:hover, .btn-success:active.focus, .btn-success:active:focus, .btn-success:active:hover, .open>.dropdown-toggle.btn-success.focus, .open>.dropdown-toggle.btn-success:focus, .open>.dropdown-toggle.btn-success:hover {
+    color: #fff;
+    background-color: #3d7504;
+    border-color: #2e5803;
+}
+.btn-success:hover, .btn-success:active, .btn-success.hover {
+    background-color: #4f8913;
+}*/
+.btn-login{
+    background: linear-gradient(130deg, #EDD184, #eee, #EDD184);
+    border: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    transition: .3s ease;
+}
+.btn-login:hover{
+    color: #333;
+    box-shadow: 0px 5px 10px #0003;
+}
+a {
+    color: #5c981e;
+}
+a:hover, a:focus {
+    color: #467911;
+}
+.skin-green .main-header li.user-header {
+    background-color: #5c981e;
+}
+/*/perubahan color*/

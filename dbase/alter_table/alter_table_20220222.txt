@@ -1,0 +1,3 @@
+ALTER TABLE `data_stok` ADD `penyimpanan` ENUM('etalase','gudang') NOT NULL AFTER `harga_satuan`;
+ALTER TABLE `data_stok_log` CHANGE `jenis_transaksi` `jenis_transaksi` INT(11) NOT NULL COMMENT '1 = penerimaan 2 = so out 3 = so in 4 = distribusi';
+ALTER TABLE `data_stok_log` CHANGE `batch` `batch` VARCHAR(11) NOT NULL;

@@ -1,0 +1,4 @@
+ALTER TABLE `data_obat` ADD `create_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP AFTER `is_permanent`, ADD `update_at` DATETIME on update CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP AFTER `create_at`;
+ALTER TABLE `data_obat` CHANGE `update_at` `update_at` DATETIME on update CURRENT_TIMESTAMP NULL DEFAULT NULL;
+
+====done===

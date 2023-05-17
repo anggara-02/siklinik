@@ -1,0 +1,16 @@
+daftar : medsos
+
+daftar pasien setelah daftar : order by id asc (belum diperiksa)
+
+rekam medis : order by tgl desc
+
+rm 6 digit
+
+dashboard
+pendaftar
+pemeriksaan (rekam medis) > belum diperiksa (dibedakan warna)
+daftar pasien (rekam medis)
+user
+logout
+
+

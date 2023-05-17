@@ -1,0 +1,3 @@
+ALTER TABLE data_penerimaan ADD retur_supplier TINYINT NULL DEFAULT '0' COMMENT '0 = Retur NO\r\n1 = Retur YES' AFTER id_pemesanan, ADD tanggal_retur DATE NULL DEFAULT NULL AFTER retur_supplier;
+
+ALTER TABLE data_stok_log CHANGE jenis_transaksi jenis_transaksi INT(11) NOT NULL COMMENT '1 = penerimaan 2 = so out 3 = so in 4 = distribusi 5 = retur';

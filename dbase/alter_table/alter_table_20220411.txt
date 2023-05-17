@@ -1,0 +1,1 @@
+ALTER TABLE `data_stok_log` ADD `stok_id` INT NULL DEFAULT NULL AFTER `id`;

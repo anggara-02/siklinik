@@ -1,0 +1,21 @@
+/**
+ *
+ * You can write your CSS code here, DO NOT touch the default JavaScript file
+ * because it will make it harder for you to update.
+ * 
+ */
+
+/*# sourceMappingURL=custom.css.map */
+
+.bg-theme{
+    background: #34495e;
+}
+.sidebar-mini .main-sidebar .sidebar-menu li a i{
+    margin: 0;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 42px!important;
+}
+.modal-open .section{
+    position: static;
+}

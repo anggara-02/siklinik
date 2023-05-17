@@ -1,0 +1,39 @@
+CREATE TABLE `data_stok` (
+  `id` INT NOT NULL AUTO_INCREMENT , 
+  `barcode` VARCHAR(255) NOT NULL , 
+  `is_obat` TINYINT(1) NOT NULL DEFAULT '1' , 
+  `id_kemasan` INT NOT NULL , 
+  `qty` INT NOT NULL , 
+  `expired_date` DATE NULL DEFAULT NULL , 
+  `batch` INT NOT NULL , PRIMARY KEY (`id`)
+) ENGINE = MyISAM;
+CREATE TABLE `data_stok_log` ( 
+  `id` INT NOT NULL AUTO_INCREMENT , 
+  `barcode` INT NOT NULL , 
+  `is_obat` INT NOT NULL , 
+  `id_kemasan` INT NOT NULL , 
+  `qty` INT NOT NULL , 
+  `expired_date` INT NOT NULL , 
+  `batch` INT NOT NULL , 
+  `jenis_transaksi` INT NOT NULL , 
+  `id_penerimaan_obat` INT NULL DEFAULT NULL , 
+  `id_penerimaan_alkes` INT NULL DEFAULT NULL , 
+  `create_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)
+) ENGINE = MyISAM;
+CREATE TABLE `data_so` ( 
+  `so_id` INT NOT NULL AUTO_INCREMENT , 
+  `tanggal_so` DATE NOT NULL , 
+  `keterangan` TEXT NOT NULL , 
+  `penyimpanan` ENUM('etalase','gudang') NOT NULL , 
+  `is_delete` TINYINT(1) NOT NULL DEFAULT '0' , 
+  `is_permanent` TINYINT(1) NOT NULL DEFAULT '0' , PRIMARY KEY (`so_id`)
+) ENGINE = MyISAM;
+CREATE TABLE `data_so_detail` ( 
+  `so_detail_id` INT NOT NULL AUTO_INCREMENT , 
+  `barcode` VARCHAR(255) NOT NULL , 
+  `id_kemasan` INT NOT NULL , 
+  `id_so` INT NOT NULL , 
+  `id_stok` INT NOT NULL , 
+  `qty` INT NOT NULL , PRIMARY KEY (`so_detail_id`)
+) ENGINE = MyISAM;
+ALTER TABLE `data_so` ADD `kode_so` VARCHAR(100) NULL DEFAULT NULL AFTER `so_id`;

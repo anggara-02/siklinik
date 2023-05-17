@@ -1,0 +1,2 @@
+INSERT INTO `data_kemasan` (`kemasan_id`, `kemasan_name`, `is_delete`, `is_permanent`) VALUES ('999', 'Pcs', '0', '0');
+ALTER TABLE data_pemesanan ADD is_penerimaan TINYINT NOT NULL DEFAULT '0' COMMENT '0 = Tidak ada di penerimaan\r\n1 = Sudah ada di penerimaan' AFTER is_permanent;

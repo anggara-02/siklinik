@@ -1,0 +1,1 @@
+ALTER TABLE `data_stok` CHANGE `batch` `batch` VARCHAR(11) NOT NULL;
