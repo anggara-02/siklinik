@@ -1,6 +1,6 @@
 ## Intro
 
-Aplikasi ini di buat bersama team. Yang saya kerjakan dala projek ini antara lain :
+Aplikasi ini di buat bersama team. Yang saya kerjakan dalam projek ini antara lain :
 
 1. Penyesuaian beberapa Modul di Data Master
 2. Pembuatan beberapa Modul di Inventory
